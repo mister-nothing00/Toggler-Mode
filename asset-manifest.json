@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Toggler-Mode/static/css/main.beca5bb6.css",
+    "main.js": "/Toggler-Mode/static/js/main.11bb8263.js",
+    "index.html": "/Toggler-Mode/index.html",
+    "main.beca5bb6.css.map": "/Toggler-Mode/static/css/main.beca5bb6.css.map",
+    "main.11bb8263.js.map": "/Toggler-Mode/static/js/main.11bb8263.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beca5bb6.css",
+    "static/js/main.11bb8263.js"
+  ]
+}
