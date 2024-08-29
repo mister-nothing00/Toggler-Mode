@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 0 25px;
+    border-bottom: 2px double lightgrey;
+    padding-bottom: 25px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.navbar--brand {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.logo--brand {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.toggler > span {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.container--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    margin: 120px auto;
+    background-color: white; 
+    color: black; 
+}
+
+.main--title {
+    font-size: 32px;
+    font-family: 'Helvetica', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: black; 
+}
+
+.main--facts {
+    list-style-type: disc;
+    margin-left: 35px;
+}
+
+.main--facts > li {
+    margin: 15px 0;
+    color: rgb(167, 167, 167); 
+}
+
+.main--facts li::marker {
+    color: #61DAFB; 
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: black;
+}
+
+nav.dark, .container.dark {
+    background-color:black; 
+    color: #ffffff;
+}
+
+.logo--brand-dark{
+    color:#fff;
+}
+
+.container--main.dark {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid grey ;
+}
+
+.main--title.dark{
+    color: #fff;
+}
+.main--facts.dark > li {
+   
+    color: #bbbbbb; 
+   
+}
+
+.main--facts.dark li::marker {
+    color: #61DAFB; 
+}
+
+.logo--brand.dark {
+    color: white; 
 }
